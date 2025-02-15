@@ -26,13 +26,27 @@ body {
 	Arial, sans-serif;
 }
 
+.body_div {
+	z-index: 1;
+	background-color: var(--background-color);
+}
+
+
 table {
 	margin: 0 auto;
+}
+
+.top_pic_div {
+	display: flex;
+	height: 30vh;
+	
 }
 
 .top_pic {
 	width: 100vw;
 	max-width: 100%;
+	z-index: -1	;
+	position: fixed;
 }
 
 .top_nav_bar {
@@ -76,7 +90,8 @@ table {
 	background-color: inherit;
 	height: 100%;
 	align-items: center;
-
+	width: 100%;
+	justify-content: center;
 }
 .top_nav_bar_button:hover {
 	filter: brightness(60%);
@@ -116,29 +131,46 @@ p {
 .footer {
 	display: flex;
 	flex-direction: column;
-	align-items: center;
-	justify-content: space-between;
 	background-color: var(--primary-color);
 	color: var(--white-color);
 	height: 50vh;
 }
+.footer_info_panel {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	height: 100%;
+	width: 100%;
+	padding: 0 2vw;
+	gap: 1vw;	
+}
+.footer_info_panel_location_info {
+	display: flex;
+
+}
+
+.footer_info_panel_map {
+	height: 30vh;
+}
 
 .footer_copyright_panel {
-	align-self: flex-end;
 	display: flex;
 	background-color: var(--secondary-color);
 	height: 15vh;
 	margin-top: auto;
 	width: 100vw;
 	max-width: 100%;
-	line-height: 10vh;
 	align-items: center;
 	justify-content: center;
 	color: var(--white-color);
 }
 
-.menu_layout {	
+.menu_layout {
+	display: flex;
+	flex-direction: column;
 	align-self: center;
+	align-items: center;
 	min-height: 10vh;
 	margin-top: 5vh;
 	padding: 1vw;
@@ -199,5 +231,15 @@ p {
 	flex-direction: column;
 	align-content: flex-start;
 	flex-wrap: wrap;
+}
+h2 {
+	color: red;
+}
+
+.back_button {
+	filter: brightness(0) saturate(100%) invert(98%) sepia(40%) 
+	saturate(289%) hue-rotate(7deg) brightness(112%) contrast(98%);
+	transform: scaleX(-1);
+	height: 80%;
 }
 
