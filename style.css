@@ -14,8 +14,6 @@
 }
 
 body {
-	display: flex;
-	flex-direction: column;
 	margin: 0;
 	padding: 0;
 	text-align: center;
@@ -130,19 +128,25 @@ table {
 p {
 	max-width: 60vw;
 	margin: auto;
-	margin-bottom: 2vh;
 }
 
 .middle_text_block_div {
 	display: grid;
+	width: 80vw;
+	gap: 1vw;
 	grid-template-columns: repeat(2, 1fr);
 }
 
 .block {
+	background-color: aquamarine;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	padding: 5vw;
+}
+
+.inblock {
+	width: 35vw;
 }
 
 .footer {
