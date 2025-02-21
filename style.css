@@ -346,3 +346,37 @@ h2 {
 		grid-template-columns: 1fr;
 	}
 }
+
+@media print {
+	img {
+		display: none;
+	}
+	div {
+		break-inside: avoid;
+	  }
+	.sushi-container, .top_pic_div, .top_nav_bar, .cat_arrow{
+		display: none;
+	}
+	
+	.menu_box_container {
+		display: flex;
+		flex-direction: column;
+		height: auto;
+		box-shadow: none;
+	}
+	.menu_item {
+		height: fit-content;
+		filter: none;
+	}
+	.category_title {
+		color: #000000;
+		font-size: x-large;
+		justify-content: center;
+		text-decoration: underline;
+	}
+	h1, h2 {
+		color: var(--def-text-color);
+		font-size: medium;
+	}
+
+}
