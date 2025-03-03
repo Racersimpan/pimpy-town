@@ -339,10 +339,24 @@ h2 {
 	border-radius: 5px;
 }
 
+.list_header {
+	font-size: larger;
+	color: red;
+}
+
 
 
 @media screen and (max-width: 800px) {
 	.middle_text_block_div {
 		grid-template-columns: 1fr;
+	}
+}
+
+@media print {
+	.back_button {
+		display: none;
+	}
+	.sushibite {
+		display: none;
 	}
 }
