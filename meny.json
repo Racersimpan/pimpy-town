@@ -1,17 +1,72 @@
 {
-	"Mat":[
-		{
-			"namn":"Sushi",
-			"items":[
-				{
-					"namn":"Nigiri",
-					"pris":100
-				},
-				{
-					"namn":"Maki",
-					"pris":80
-				}
-			]
-		}
-	]
+  "Mat": [
+    {
+      "namn": "Sushi",
+      "items": [
+        {"id":1,"namn":"6 Bitars Sushi","beskrivning":"4 lax, 2 rullar","pris":65},
+        {"id":2,"namn":"8 Bitars Sushi","beskrivning":"2 lax, 2 avokado, 4 rullar","pris":80},
+        {"id":3,"namn":"Liten Sushi","beskrivning":"9 bitar = 3 lax, 1 räka, 1 tonfisk, 4 rullar","pris":90},
+        {"id":4,"namn":"Kockens Liten Sushi","beskrivning":"9 bitar = 3 lax, 1 avokado, 1 räka, 4 rullar","pris":90},
+        {"id":5,"namn":"Mellan Sushi","beskrivning":"11 bitar = 4 lax, 2 räkor, 1 tonfisk, 4 rullar","pris":110},
+        {"id":6,"namn":"Kockens Mellan Sushi","beskrivning":"11 bitar = 3 lax, 2 avokado, 2 räkor, 4 rullar","pris":110},
+        {"id":7,"namn":"Kockens Stor Sushi","beskrivning":"15 bitar = 5 lax, 2 räkor, 4 kockens val, 4 rullar","pris":150},
+        {"id":8,"namn":"Stor Sushi","beskrivning":"15 bitar = 6 lax, 3 räkor, 2 avokado, 4 rullar","pris":150},
+        {"id":9,"namn":"Familje Sushi","beskrivning":"30 bitar = 22 nigiri, 8 rullar","pris":290},
+        {"id":10,"namn":"Lax Sushi","beskrivning":"10 bitar lax nigiri","pris":125},
+        {"id":11,"namn":"Grillad Lax Sushi","beskrivning":"10 bitar flame-grillad lax nigiri med chilimajonäs","pris":135},
+        {"id":12,"namn":"Avokado Sushi","beskrivning":"10 bitar avokado nigiri","pris":120},
+        {"id":13,"namn":"Avokado, Lax & Roll Sushi","beskrivning":"12 bitar = 4 avokado, 4 lax, 4 rullar","pris":120},
+        {"id":14,"namn":"Avokado, Lax & Räk Sushi","beskrivning":"12 bitar = 4 lax, 4 avokado, 4 räkor","pris":145},
+        {"id":15,"namn":"Lax & Avokado Sushi","beskrivning":"10 bitar = 5 lax, 5 avokado","pris":120},
+        {"id":16,"namn":"Lax & Roll Sushi","beskrivning":"13 bitar = 8 lax, 5 rullar","pris":125},
+        {"id":17,"namn":"Lax & Räk Sushi","beskrivning":"10 bitar = 5 lax, 5 räkor","pris":130},
+        {"id":18,"namn":"Avokado & Räk Sushi","beskrivning":"10 bitar = 5 avokado, 5 räkor","pris":130},
+        {"id":19,"namn":"Mammas Special Sushi","beskrivning":"11 bitar = 2 räkor, 1 avokado, 1 tofu, 1 omelett, 1 crabstick, 5 rullar","pris":105},
+        {"id":20,"namn":"Vegetarisk Sushi","beskrivning":"11 bitar = 2 avokado, 2 tofu, 2 rättika, 5 rullar","pris":105},
+        {"id":21,"namn":"Fatimas Special","beskrivning":"20 bitar = 15 nigiri, 5 rullar","pris":210},
+        {"id":22,"namn":"Nybörjar Sushi","beskrivning":"9 bitar = 2 lax, 1 räka, 1 avokado, 1 tofu, 1 omelett, 3 rullar","pris":95},
+        {"id":23,"namn":"Sashimi Liten","beskrivning":"Olika sorter rå fisk med ris och sallad","pris":115},
+        {"id":24,"namn":"Sashimi Stor","beskrivning":"Olika sorter rå fisk med ris och sallad","pris":155}
+      ]
+    },
+    {
+      "namn": "Rolls",
+      "items": [
+        {"id":25,"namn":"California Rolls","beskrivning":"10 bitar rullar med gurka, avokado, crabsticks och lax","pris":90},
+        {"id":26,"namn":"Foto Maki Rolls","beskrivning":"10 bitar rullar med gurka, avokado, crabsticks och lax","pris":90},
+        {"id":27,"namn":"Supper Happy Rolls","beskrivning":"10 bitar rullar med paprika, gurka, avokado, lax, philadelphiaost och rostad lök","pris":120},
+        {"id":28,"namn":"Crazy Rolls","beskrivning":"10 bitar rullar med grillad kycklingfilé, paprika, gurka, philadelphiaost och rostad lök","pris":120},
+        {"id":29,"namn":"Rock n Rolls","beskrivning":"10 bitar rullar med mango, avokado, philadelphiaost och lax på toppen","pris":120},
+        {"id":30,"namn":"Mammas Special Rolls","beskrivning":"10 bitar rullar med philadelphiaost, crabsticks, avokado och räkor på toppen","pris":120},
+        {"id":31,"namn":"Yakiniku Crunchy Rolls","beskrivning":"10 bitar rullar med yakiniku, gurka, paprika, philadelphiaost och rostad lök","pris":120},
+        {"id":32,"namn":"Dragon Tempura Rolls","beskrivning":"10 bitar rullar med räkor tempura, gurka, paprika, philadelphiaost och rostad lök","pris":120},
+        {"id":33,"namn":"California Deluxe Rolls","beskrivning":"10 bitar rullar med avokado, crabsticks, philadelphia, rostad lök, chilimajo, teriyaki och flamberad lax","pris":130},
+        {"id":34,"namn":"Vegetarisk Special Rolls","beskrivning":"10 bitar rullar med mango, avokado, gurka, tofu, paprika, philadelphiaost och rostad lök","pris":140}
+      ]
+    },
+    {
+      "namn": "Japansk Varmrätter",
+      "items": [
+        {"id":35,"namn":"Yakiniku","beskrivning":"Tunn skivad nötkött med ris, såser och mixed sallader","pris":120},
+        {"id":36,"namn":"Yakitori","beskrivning":"4 kycklingspett med ris, såser och mixed sallader","pris":105},
+        {"id":37,"namn":"Kyckling Teriyaki","beskrivning":"Grillad kycklingfilé med ris, såser och mixed sallader","pris":105},
+        {"id":38,"namn":"Lax Teriyaki","beskrivning":"Grillad laxfilé med ris, såser och mixed sallader","pris":120},
+        {"id":39,"namn":"Bento Låda","beskrivning":"Yakiniku, yakitori, ris, 4 bitar sushi, såser och mixed sallader","pris":130},
+        {"id":40,"namn":"Yakiniku Sushi","beskrivning":"Yakiniku, ris, 5 bitar sushi, såser och mixed sallader","pris":120},
+        {"id":41,"namn":"Yakitori Sushi","beskrivning":"Yakitori, ris, 5 bitar sushi, såser och mixed sallader","pris":105},
+        {"id":42,"namn":"Gyoza","beskrivning":"Dumplings med kyckling eller vegetarisk, ris, såser och mixed sallader","pris":110},
+        {"id":43,"namn":"Gyoza Sushi","beskrivning":"4 dumplings och 5 bitar sushi","pris":110}
+      ]
+    },
+    {
+      "namn": "Bibimbap & Poke Bowl",
+      "items": [
+        {"id":44,"namn":"Biff Bibimbap","beskrivning":"Marinerad nötkött med ris, kokta ägg, rostad lök, bibimbap sås och sallader","pris":120},
+        {"id":45,"namn":"Kyckling Bibimbap","beskrivning":"Marinerad kyckling med ris, kokta ägg, rostad lök, bibimbap sås och sallader","pris":120},
+        {"id":46,"namn":"Salmon Poke Bowl","beskrivning":"Marinerad rå lax med ris, kokta ägg, rostad lök, poke sås och sallader","pris":120},
+        {"id":47,"namn":"Shrimp Poke Bowl","beskrivning":"Marinerade räkor med ris, kokta ägg, rostad lök, poke sås och sallader","pris":120},
+        {"id":48,"namn":"Vegansk Poke Bowl","beskrivning":"Marinerad tofu med ris, rostad lök, poke sås och sallader","pris":120}
+      ]
+    }
+  ]
 }
