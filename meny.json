@@ -1,0 +1,17 @@
+{
+	"Mat":[
+		{
+			"namn":"Sushi",
+			"items":[
+				{
+					"namn":"Nigiri",
+					"pris":100
+				},
+				{
+					"namn":"Maki",
+					"pris":80
+				}
+			]
+		}
+	]
+}
