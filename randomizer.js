@@ -1,3 +1,18 @@
+async function loadMenu() {
+
+    const response = await fetch("meny.json");
+    const data = await response.json();
+
+    // plocka ut alla items från alla kategorier
+    let menyData = [];
+
+    data.Mat.forEach(category => {
+        menyData.push(...category.items);
+    });
+
+    randomizer(menyData);
+}
+
 function randomizer(){
 
     let copy = [...menyData]; // kopia så vi kan ta bort items
@@ -16,4 +31,4 @@ function randomizer(){
     }
 }
 
-randomizer();
+loadMenu();
