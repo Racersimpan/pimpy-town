@@ -13,7 +13,7 @@ async function loadMenu() {
     randomizer(menyData);
 }
 
-function randomizer(){
+function randomizer(menyData){
 
     let copy = [...menyData]; // kopia så vi kan ta bort items
 
