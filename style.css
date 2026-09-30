@@ -265,9 +265,20 @@ p {
 
 .menu_item {
 	height: 30vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	gap: 0.5vh;
+	padding: 1vh;
 	background-color: var(--white-color);
 	filter:  drop-shadow(2px 2px 2px var(--secondary-color));
 	
+}
+
+.menu_item h1,
+.menu_item p,
+.menu_item h2 {
+	margin: 0;
 }
 .category_picture {
 	position: absolute;

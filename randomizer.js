@@ -23,8 +23,8 @@ function randomizer(menyData){
         const item = copy[randomIndex];
 
         document.getElementById("dagens_"+i).innerHTML =
-        `<h1>${item.namn}</h1><br>
-        <p>${item.beskrivning}</p><br>
+        `<h1>${item.namn}</h1>
+        <p>${item.beskrivning}</p>
         <h2>${item.pris} kr</h2>`;
 
         copy.splice(randomIndex,1); // ta bort så inga dubbletter
