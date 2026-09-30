@@ -65,6 +65,7 @@ table {
 	height: 7vh;
 	background-color: var(--secondary-color);
 	z-index: 100000;
+	transition: background-color 0.2s ease, box-shadow 0.2s ease;
 }
 
 .top_nav_bar_logo {
@@ -89,6 +90,7 @@ table {
 	user-select: none;
 	align-items: center;
 	justify-content: center;
+	transition: background-color 0.2s ease, color 0.2s ease, transform 0.2s ease;
 }
 
 .top_nav_bar_button {
@@ -100,6 +102,7 @@ table {
 	align-items: center;
 	width: 100%;
 	justify-content: center;
+	transition: color 0.2s ease;
 }
 .top_nav_bar_button:hover, .mail_button:hover, .link_button:hover {
 	filter: brightness(60%);
@@ -117,6 +120,7 @@ table {
 	width: 80%;
 	align-items: center;
 	justify-content: center;
+	transition: background-color 0.2s ease, color 0.2s ease, transform 0.2s ease;
 }
 .top_nav_bar_button_alt_closed {
 	background-color: var(--secondary-color);
@@ -336,11 +340,41 @@ h2 {
 
 .mail_form_info_input {
 	width: 20em;
+	transition: box-shadow 0.2s ease, border-color 0.2s ease, transform 0.2s ease;
 }
 
 .mail_form_block_input {
 	width: 30em;
 	height: 30vh;
+	transition: box-shadow 0.2s ease, border-color 0.2s ease, transform 0.2s ease;
+}
+
+body.nav-hover-active {
+	--secondary-color: #615956;
+	--background-color: #f0ebe4;
+}
+
+body.nav-hover-active .top_nav_bar {
+	box-shadow: 0 0.8vh 2vh rgba(0, 0, 0, 0.18);
+}
+
+body.nav-hover-active .top_nav_bar_button_div {
+	transform: translateY(-0.15vh);
+}
+
+body.nav-hover-active .top_nav_bar_button_alt,
+body.nav-hover-active .top_nav_bar_button_alt_closed {
+	transform: scale(1.02);
+}
+
+body.form-focus-active {
+	--background-color: #efe7da;
+}
+
+.field-focused {
+	border: 0.2vh solid var(--secondary-color);
+	box-shadow: 0 0 0.9vh rgba(74, 67, 64, 0.22);
+	transform: scale(1.01);
 }
 
 .mail_button {
