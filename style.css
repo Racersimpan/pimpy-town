@@ -349,29 +349,23 @@ h2 {
 	transition: box-shadow 0.2s ease, border-color 0.2s ease, transform 0.2s ease;
 }
 
-body.nav-hover-active {
-	--secondary-color: #615956;
-	--background-color: #f0ebe4;
-}
-
-body.nav-hover-active .top_nav_bar {
-	box-shadow: 0 0.8vh 2vh rgba(0, 0, 0, 0.18);
-}
-
-body.nav-hover-active .top_nav_bar_button_div {
+.top_nav_bar_button.nav-hovered,
+.top_nav_bar_button_alt.nav-hovered,
+.top_nav_bar_button_alt_closed.nav-hovered {
+	background-color: #7a7069;
+	color: var(--white-color);
 	transform: translateY(-0.15vh);
+	box-shadow: 0 0.6vh 1vh rgba(0, 0, 0, 0.12);
 }
 
-body.nav-hover-active .top_nav_bar_button_alt,
-body.nav-hover-active .top_nav_bar_button_alt_closed {
-	transform: scale(1.02);
+.top_nav_bar_button_alt.nav-hovered {
+	background-color: var(--white-color);
+	color: var(--secondary-color);
 }
 
-body.form-focus-active {
-	--background-color: #efe7da;
-}
-
-.field-focused {
+.mail_form_info_input.field-focused,
+.mail_form_block_input.field-focused {
+	background-color: #fffaf3;
 	border: 0.2vh solid var(--secondary-color);
 	box-shadow: 0 0 0.9vh rgba(74, 67, 64, 0.22);
 	transform: scale(1.01);

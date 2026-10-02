@@ -16,11 +16,11 @@ function setupNavHoverEffects() {
 
 	navButtons.forEach((button) => {
 		button.addEventListener("mouseover", () => {
-			document.body.classList.add("nav-hover-active");
+			button.classList.add("nav-hovered");
 		});
 
 		button.addEventListener("mouseout", () => {
-			document.body.classList.remove("nav-hover-active");
+			button.classList.remove("nav-hovered");
 		});
 	});
 }
@@ -34,20 +34,11 @@ function setupFormFocusEffects() {
 
 	formFields.forEach((field) => {
 		field.addEventListener("focus", () => {
-			document.body.classList.add("form-focus-active");
 			field.classList.add("field-focused");
 		});
 
 		field.addEventListener("blur", () => {
 			field.classList.remove("field-focused");
-
-			const stillFocusedInForm = Array.from(formFields).some(
-				(element) => element === document.activeElement
-			);
-
-			if (!stillFocusedInForm) {
-				document.body.classList.remove("form-focus-active");
-			}
 		});
 	});
 }
