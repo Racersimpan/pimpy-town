@@ -104,12 +104,12 @@ table {
 	justify-content: center;
 	transition: color 0.2s ease;
 }
-.top_nav_bar_button:hover, .mail_button:hover, .link_button:hover {
+/*.top_nav_bar_button:hover, .mail_button:hover, .link_button:hover {
 	filter: brightness(60%);
 }
 .top_nav_bar_button:active, .mail_button:active, .link_button:active {
 	filter: brightness(70%);
-}
+}*/
 .top_nav_bar_button_alt, .top_nav_bar_button_alt_closed {
 	text-decoration: none;
 	display: flex;
