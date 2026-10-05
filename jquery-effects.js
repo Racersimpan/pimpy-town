@@ -10,7 +10,7 @@ $(document).ready(function () {
     $("#leftText").click(fadeFirstText);
     $("#rightText").click(fadeSecondText);
 
-    $(".effectText").click(function () {
+    $("#effectText").click(function () {
     $(".submenu").slideToggle(500);
     });
 });
