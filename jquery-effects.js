@@ -1,17 +1,15 @@
 $(document).ready(function () {
-    $(function () {
-        $("#leftText").click(function () {
-            //$(this).fadeTo(600, 0.3);
-            $(this).hide();
-        });
+    $(".submenu").hide();
 
-        $("#rightText").click(function () {
-            //$(this).fadeTo(600, 0.8);
-            $(this).hide();
-        });
+    $("#leftText").on("click", function () {
+        $(this).hide(500);
+    });
 
-        $("#effectText").click(function () {
-            $(".submenu").slideToggle(500);
-        });
+    $("#rightText").on("click", function () {
+        $(this).hide(500);
+    });
+
+    $("#effectText").on("click", function () {
+        $(".submenu").slideToggle(500);
     });
 });
