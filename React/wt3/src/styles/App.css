@@ -47,6 +47,7 @@ main {
   border: 0;
   background: transparent;
   cursor: pointer;
+  text-decoration: none;
 }
 
 .nav-buttons {
@@ -54,7 +55,7 @@ main {
   gap: 0.5vw;
 }
 
-.nav-buttons button {
+.nav-buttons a {
   display: flex;
   width: 8vw;
   align-items: center;
@@ -64,9 +65,10 @@ main {
   background: var(--secondary);
   cursor: pointer;
   font: inherit;
+  text-decoration: none;
 }
 
-.nav-buttons button.active {
+.nav-buttons a.active {
   color: var(--secondary);
   background: var(--white);
 }
@@ -286,7 +288,7 @@ button {
     width: 20vw;
   }
 
-  .nav-buttons button {
+  .nav-buttons a {
     width: 20vw;
   }
 

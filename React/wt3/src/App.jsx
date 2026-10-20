@@ -1,48 +1,57 @@
-import { useState } from 'react'
-import './App.css'
+import { useEffect } from 'react'
+import { NavLink, Route, Routes, Link, useLocation } from 'react-router-dom'
+import './styles/App.css'
 import Contact from './pages/Contact'
 import Home from './pages/Home'
 import Menu from './pages/Menu'
 
-function App() {
-  const [activeView, setActiveView] = useState('home')
+function ScrollToTop() {
+  const { pathname } = useLocation()
 
-  const changeView = (view) => {
-    setActiveView(view)
+  useEffect(() => {
     window.scrollTo({ top: 0, behavior: 'smooth' })
-  }
+  }, [pathname])
 
+  return null
+}
+
+function App() {
   return (
     <main>
+      <ScrollToTop />
       <header className="hero" />
 
       <nav className="top-nav" aria-label="Huvudmeny">
-        <button className="logo-button" onClick={() => changeView('home')}>
+        <Link className="logo-button" to="/">
           <img
             className="logo"
             src="/images/Fatimasushilogo.png"
             alt="Fatima Sushi Bar"
           />
-        </button>
+        </Link>
         <div className="nav-buttons">
-          <button className={activeView === 'home' ? 'active' : ''} onClick={() => changeView('home')}>
+          <NavLink to="/" className={({ isActive }) => (isActive ? 'active' : '')}>
             Hem
-          </button>
-          <button className={activeView === 'contact' ? 'active' : ''} onClick={() => changeView('contact')}>
+          </NavLink>
+          <NavLink to="/kontakt" className={({ isActive }) => (isActive ? 'active' : '')}>
             Kontakt
-          </button>
-          <button
-            className={`nav-button-highlight ${activeView === 'menu' ? 'active' : ''}`}
-            onClick={() => changeView('menu')}
+          </NavLink>
+          <NavLink
+            to="/meny"
+            className={({ isActive }) =>
+              `nav-button-highlight ${isActive ? 'active' : ''}`
+            }
           >
             Meny
-          </button>
+          </NavLink>
         </div>
       </nav>
 
-      {activeView === 'home' && <Home />}
-      {activeView === 'menu' && <Menu />}
-      {activeView === 'contact' && <Contact />}
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/meny" element={<Menu />} />
+        <Route path="/kontakt" element={<Contact />} />
+      </Routes>
     </main>
   )
 }
