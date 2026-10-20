@@ -1,3 +1,5 @@
+import LikeButton from '../components/LikeButton'
+
 function Home() {
   return (
     <>
@@ -22,6 +24,10 @@ function Home() {
 
         <div className="content-block">
           <img className="in-block" src="/images/bimbibop.jpg" alt="Bimbibop" />
+        </div>
+
+        <div className="content-block">
+          <LikeButton />
         </div>
       </section>
     </>
